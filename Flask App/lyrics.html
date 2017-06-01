@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang = "en-US">
+<!-- Head of html file -->
+<head>
+
+<!-- CSS stuff to style the page   -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body,h1,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  h2 {
+    font-family: "Raleway", sans-serif
+    text-align: "center"
+  }
+
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+
+  label {
+    font-size: 22px}
+
+  }
+
+  body{
+    background-color: "w3-red"
+    .center {
+        margin: auto;
+        width: 50%;
+        /*border: 3px solid green;*/
+        padding: 10px;
+    }
+  }
+  </style>
+</head>
+
+<!-- Body of html file -->
+<body>
+
+<!-- Form where the user inputs the seed or the "title" of the song that they want the RNN to write -->
+<form action="/song" name ="theForm" method = "post">
+<!-- Title that shows up on page -->
+  <h1 id="test">RNN Lyricizer</h1>
+  <br><br>
+<!-- Tells the user where to input their title   -->
+  <p>Input your song title here:</p>
+  <input type="text" name="title" id="input"></input>
+  <br>
+<!-- Submit button that starts the running of the RNN -->
+  <button id="button" onclick="postData()">Submit</button>
+  <br>
+</form>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+
+// This function takes the data and posts it to the RNN
+function postData(){
+  title = document.getElementById("input").value
+
+}
+
+</script>
+</body>
+</html>
